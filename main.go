@@ -325,5 +325,5 @@ func main() {
 		Handle(func(ctx *zero.Ctx) {
 			ctx.SendChain(message.Text(strings.ReplaceAll(kanban.Kanban(), "\t", "")))
 		})
-	zero.RunAndBlock(&config.Z, process.GlobalInitMutex.Unlock)
+	zero.RunAndBlock(&config.Z, process.GlobalInitMutex.Unlock)-
 }
